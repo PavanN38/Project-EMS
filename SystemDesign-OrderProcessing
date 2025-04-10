@@ -1,0 +1,42 @@
+To design a system for Order Processing we basically follow the following steps:
+
+[User] 
+   |
+[API Gateway] 
+   |
+-------------------------------
+| Order Service        |
+| Payment Service      |
+| Inventory Service    |
+| Shipping Service     |
+| Notification Service |
+| User Service         |
+-------------------------------
+   |
+Kafka Messaging Queue
+   |
+Databases (SQL/NoSQL)
+   |
+Docker → Kubernetes → Load Balancer
+   |
+Monitoring & Alerts (Prometheus + Grafana + ELK)
+
+
+Microservices and Their Responsibilities:
+=========================================
+Order Service-	Handle order creation, updates, status tracking, and maintain order history.
+Payment Service-	Handle payment processing, integration with third-party payment gateways, and manage transaction status.
+Inventory Service-	Manage product availability, stock updates, and reservation of inventory during order placement.
+Shipping Service-	Handle shipment creation, tracking, integration with shipping partners, and update shipment status.
+Notification Service-	Send real-time notifications (email, SMS, push) to users about order updates and payment status.
+User Service- Handle user registration, authentication, authorization, and user profile management.
+
+Some of the common things we need to take care while designing such systems are:
+1.  Communication Patterns(Synchronous/ ASynchronous )
+2. Data Storage
+3.  Scalability & High Availability (Docker, Kubernates and AWS)
+4.  Monitoring & Observability (ELK)
+5.  Security
+6. CI/CD Pipeline
+
+By following these we can build a system which can be production ready and secured.
