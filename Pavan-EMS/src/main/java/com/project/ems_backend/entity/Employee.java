@@ -24,9 +24,9 @@ public class Employee
     @Column(name = "Last_name")
     private String lastName;
 
-    @Column(name = "phone_number")
-    private Long phoneNumber;
+    @Column(name = "salary")
+    private Long salary;
 
-    @Column(name = "email_id", nullable = false, unique = true)
-    private String email;
+    @Column(name = "department")
+    private String department;
 }

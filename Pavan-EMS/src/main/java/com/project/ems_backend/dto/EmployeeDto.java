@@ -16,6 +16,6 @@ public class EmployeeDto
     private Long id;
     private  String firstName;
     private  String lastName;
-    private Long phoneNumber;
-    private String email;
+    private Long salary;
+    private String department;
 }

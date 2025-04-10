@@ -12,8 +12,8 @@ public class EmployeeMapper
                 employee.getId(),
                 employee.getFirstName(),
                 employee.getLastName(),
-                employee.getPhoneNumber(),
-                employee.getEmail()
+                employee.getSalary(),
+                employee.getDepartment()
         );
     }
 
@@ -23,8 +23,8 @@ public class EmployeeMapper
                 employeeDto.getId(),
                 employeeDto.getFirstName(),
                 employeeDto.getLastName(),
-                employeeDto.getPhoneNumber(),
-                employeeDto.getEmail()
+                employeeDto.getSalary(),
+                employeeDto.getDepartment()
         );
     }
 }
