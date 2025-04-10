@@ -30,12 +30,13 @@ Spring MVC (for RESTful services)
 
 *Database:*
 
-MySQL 
+H2 DataBase
 
 Build Tool:
 
 Maven
 
+Junit with Mockito
 *Other:*
 
 Lombok (to reduce boilerplate code)
